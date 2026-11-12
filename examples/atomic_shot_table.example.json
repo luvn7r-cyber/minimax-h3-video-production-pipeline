@@ -1,0 +1,63 @@
+[
+  {
+    "sub_id": "S01",
+    "mode": "FL2VA",
+    "start": 0.0,
+    "end": 3.5,
+    "target_frames_30": 105,
+    "shot_size": "MCU",
+    "camera": "static_subtle_push",
+    "subjects_at_start": [
+      "lead_female"
+    ],
+    "subjects_entering": [],
+    "has_extras": false,
+    "cards": [
+      "character_cards/card_lead_female.jpg"
+    ],
+    "f0": "anchors/S01_f0.jpg",
+    "fmid": [],
+    "fend": "anchors/S01_fend.jpg",
+    "ref_video": "",
+    "s2_lock_fmid": false,
+    "prompt": "integrated_multimodal_description:\nA cinematic 16:9 live-action drama shot with natural warm indoor lighting and shallow depth of field. [Shot 1] Medium close-up starting from the first frame: a young woman in a dark wool coat stands by a rain-streaked café window, holding a warm ceramic cup with both hands. From 00:00.000 to 00:01.800, she hears footsteps, slowly turns her head 45 degrees toward the right, and lowers the cup slightly while parting her lips softly. From 00:01.800 to 00:04.000, a gentle relieved smile forms on her face as she looks warmly at the person off-screen right, settling smoothly into the exact pose of the ending frame. Raindrops trickle steadily down the windowpane; background bokeh lights remain stable. Zero text, zero logos, zero watermarks.\n\noverall_soundscape:\nSoft rain pattering against glass, quiet café room tone, a subtle ceramic cup movement, and a gentle audible breath.\n\nnon_diegetic_music:\nN/A",
+    "soundscape": "Soft rain pattering against café glass and a quiet audible breath.",
+    "seed": 20261101,
+    "status": "关键图已审",
+    "fail_log": []
+  },
+  {
+    "sub_id": "S02",
+    "mode": "Ref2VA",
+    "start": 3.5,
+    "end": 7.5,
+    "target_frames_30": 120,
+    "shot_size": "MFS",
+    "camera": "dolly_out_from_master_plate",
+    "subjects_at_start": [
+      "lead_male",
+      "lead_female"
+    ],
+    "subjects_entering": [],
+    "has_extras": false,
+    "cards": [
+      "character_cards/card_lead_male.jpg",
+      "character_cards/card_lead_female.jpg"
+    ],
+    "f0": "anchors/S02_f0_derived_from_master.jpg",
+    "fmid": [
+      [
+        "anchors/S02_fmid1_wide_master.jpg",
+        0.5
+      ]
+    ],
+    "fend": "anchors/S02_fend_wide.jpg",
+    "ref_video": "ref_slices/S02_motion_24fps_cleaned.mp4",
+    "s2_lock_fmid": "first",
+    "prompt": "subject_definitions:\n<Subject 1> is the male lead character whose facial likeness, fair natural skin tone, dark short hair, and tailored charcoal jacket come from <Picture 1>.\n<Subject 2> is the female lead character whose facial likeness, hairstyle, and ivory dress come from <Picture 2>.\n<Subject 3> is the warm theater stage environment shown in the keyframe anchors, preserving the exact lighting layout and camera perspective.\n\nsummary:\n[reference generation + keyframe completion] A continuous 4.0-second medium-full shot of <Subject 1> and <Subject 2> performing a synchronized duet interaction on <Subject 3>, following the motion rhythm of <Video 1> and transitioning smoothly through the anchored keyframes.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - exact facial identity and outfit from <Picture 1> are strictly retained.\n<Subject 2> (appears in [Shot 1]): fully_preserved - exact facial identity and outfit from <Picture 2> are strictly retained.\n<Subject 3> (appears in [Shot 1]): fully_preserved - stage geometry, lighting, and camera framing remain consistent without background switching.\n\ndetailed_description:\nThe target video is a photorealistic 16:9 4K cinematic performance shot.\n[Shot 1] <Subject 1> on the left and <Subject 2> on the right step toward center stage. From 00:00.400 to 00:02.200, <Subject 1> sings expressively with clear lip sync while extending his right hand; <Subject 2> places her hand in his and turns smoothly into a side-by-side pose by 00:04.000. In <Picture 1> is the male lead; in <Picture 2> is the female lead. Clean background with only the two leads, zero text, zero watermarks.\n\noverall_soundscape:\nFrom 0.40s to 2.20s clear expressive male lead vocals matching mouth movements, followed by subtle stage footsteps and room ambience.\n\nnon_diegetic_music:\nWarm mid-tempo pop instrumental accompaniment.",
+    "soundscape": "From 0.40s to 2.20s expressive male vocals, followed by subtle footsteps.",
+    "seed": 20261102,
+    "status": "关键图已审",
+    "fail_log": []
+  }
+]
