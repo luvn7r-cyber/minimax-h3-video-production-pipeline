@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+current_tunnel.txt
+renders/
+qa/
+deliverables/
